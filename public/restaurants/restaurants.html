@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <title>MealCity</title>
+</head>
+
+<body>
+  <!--Header-->
+  <div class="content">
+    <h1>Restaurants</h1>
+    <div>
+      <a href="../index.html">Home</a>
+      <a href="../drivers/drivers.html">Drivers</a>
+      <a href="../shifts/shifts.html">Shifts</a>
+      <a href="../drivershifts/drivershifts.html">Driver Shifts</a>
+      <a href="../orders/orders.html">Orders</a>
+      <a href="../customers/customers.html">Customers</a>
+      <a href="./restaurants.html">Restaurants</a>
+      <a href="../driverorders/driverorders.html">Orders by Driver</a>
+    </div>
+  </div>
+  <!--New Restaurant Form-->
+  <div class="content">
+    <form>
+      <fieldset>
+        <legend>New Restaurant</legend>
+        <label for="restaurantName">restaurantName</label>
+        <input type="text" id="restaurantName">
+        <label for="restaurantStreet">restaurantStreet</label>
+        <input type="text" id="restaurantStreet">
+        <label for="restaurantZIP">restaurantZIP</label>
+        <input type="text" id="restaurantZIP">
+        <input type="submit" id="restaurantSubmit">
+      </fieldset>
+    </form>
+  </div>
+  <!--Restaurant Table-->
+  <div class="content">
+    <div id="restaurant-table" style="display:table;width:100%;">
+      <div style="display:table-row;">
+        <div id="restaurant-id-header" style="display:table-cell;"><b>restaurantID</b></div>
+        <div id="restaurant-name-header" style="display:table-cell;"><b>restaurantName</b></div>
+        <div id="restaurant-street-header" style="display:table-cell;"><b>restaurantStreet</b></div>
+        <div id="restaurant-ZIP-header" style="display:table-cell;"><b>restaurantZIP</b></div>
+        <div id="restaurant-delete" style="display:table-cell;"><b>&nbsp;</b></div>
+      </div>
+    </div>
+  </div>
+  <!--Javascript-->
+  <script src="./restaurantsScript.js"></script>
+</body>
+
+</html>

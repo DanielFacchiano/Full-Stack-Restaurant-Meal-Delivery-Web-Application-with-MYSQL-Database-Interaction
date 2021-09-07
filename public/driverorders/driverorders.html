@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MealCity</title>
+    <link rel="stylesheet" href="../stylesheets/style.css" type="text/css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="content">
+        <h1>Orders by Driver</h1>
+        <div>
+            <a href="../index.html">Home</a>
+            <a href="../drivers/drivers.html">Drivers</a>
+            <a href="../shifts/shifts.html">Shifts</a>
+            <a href="../drivershifts/drivershifts.html">Driver Shifts</a>
+            <a href="../orders/orders.html">Orders</a>
+            <a href="../customers/customers.html">Customers</a>
+            <a href="../restaurants/restaurants.html">Restaurants</a>
+            <a href="./driverorders.html">Orders by Driver</a>
+        </div>
+    </div>
+    <!--Orders by Driver ID Form-->
+    <div class="content">
+        <form id="new-driver" method="POST" action="">
+            <fieldset>
+                <legend>Orders by Driver ID</legend>
+                <label for="driverID">driverID</label>
+                <select name="selectID" id="selector">
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+				</select>
+                <input type="submit" value="Post" id="searchSubmit">
+            </fieldset>
+        </form>
+    </div>
+    <!--Drivers Table-->
+    <div class="content">
+        <div id="order-table" style="display:table;width:100%;">
+            <div style="display:table-row;">
+                <div id="order-id-header" style="display:table-cell;"><b>orderID</b></div>
+                <div id="restaurant-id-header" style="display:table-cell;"><b>restaurantID</b></div>
+                <div id="customer-id-header" style="display:table-cell;"><b>customerID</b></div>
+                <div id="order-time-header" style="display:table-cell;"><b>orderTime</b></div>
+                <div id="order-delivery-time-header" style="display:table-cell;"><b>deliveryTime</b></div>
+                <div id="shift-id-header" style="display:table-cell;"><b>shiftID</b></div>
+                <div id="order-delete" style="display:table-cell;"><b>&nbsp;</b></div>
+            </div>
+        </div>
+    </div>
+    <!--Javascript-->
+    <script src="./driverorders.js"></script>
+</body>
+
+</html>

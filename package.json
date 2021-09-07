@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-starter-app",
+  "version": "1.0.0",
+  "description": "This guide is intended for the students in CS 340 who want to take a path through the class using Node.js and Javascript.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cs340-ecampus/nodejs-starter-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osu-cs340-ecampus/nodejs-starter-app/issues"
+  },
+  "homepage": "https://github.com/osu-cs340-ecampus/nodejs-starter-app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "forever": "^4.0.1",
+    "mysql": "^2.18.1"
+  }
+}

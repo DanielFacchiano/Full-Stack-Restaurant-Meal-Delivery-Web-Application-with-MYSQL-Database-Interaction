@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <title>MealCity</title>
+</head>
+
+<body>
+  <!--Header-->
+  <div class="content">
+    <h1>Customers</h1>
+    <div>
+      <a href="../index.html">Home</a>
+      <a href="../drivers/drivers.html">Drivers</a>
+      <a href="../shifts/shifts.html">Shifts</a>
+      <a href="../drivershifts/drivershifts.html">Driver Shifts</a>
+      <a href="../orders/orders.html">Orders</a>
+      <a href="./customers.html">Customers</a>
+      <a href="../restaurants/restaurants.html">Restaurants</a>
+      <a href="../driverorders/driverorders.html">Orders by Driver</a>
+    </div>
+  </div>
+  <!--New Customer Form-->
+  <div class="content">
+    <form>
+      <fieldset>
+        <legend>New Customer</legend>
+        <label for="customerFirstName">customerFirstName<label>
+        <input type="text" id="customerFirstName">
+        <label for="customerLastName">customerLastName</label>
+        <input type="text" id="customerLastName">
+        <label for="customerStreet">customerStreet</label>
+        <input type="text" id="customerStreet"> 
+        <label for="customerZIP">customerZIP</label>
+        <input type="text" id="customerZIP">
+        <input type="submit" id="customerSubmit">
+      </fieldset>
+    </form>
+  </div>
+  <!--Customer Table-->
+  <div class="content">
+    <div id="customer-table" style="display:table;width:100%;">
+      <div style="display:table-row;">
+        <div id="customer-id-header" style="display:table-cell;"><b>customerID</b></div>
+        <div id="customer-first-name-header" style="display:table-cell;"><b>customerFirstName</b></div>
+        <div id="customer-last-name-header" style="display:table-cell;"><b>customerLastName</b></div>
+        <div id="customer-assigned-header" style="display:table-cell;"><b>customerStreet</b></div>
+        <div id="customer-zip" style="display:table-cell;"><b>&nbsp;</b><b>customerZIP</b></div>
+      </div>
+    </div>
+  </div>
+  <!--Javascript-->
+  <script src="./customerScript.js"></script>
+</body>
+
+</html>

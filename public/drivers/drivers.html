@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MealCity</title>
+    <link rel="stylesheet" href="../stylesheets/style.css" type="text/css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="content">
+        <h1>Drivers</h1>
+        <div class>
+            <a href="../index.html">Home</a>
+            <a href="./drivers.html">Drivers</a>
+            <a href="../shifts/shifts.html">Shifts</a>
+            <a href="../drivershifts/drivershifts.html">Driver Shifts</a>
+            <a href="../orders/orders.html">Orders</a>
+            <a href="../customers/customers.html">Customers</a>
+            <a href="../restaurants/restaurants.html">Restaurants</a>
+            <a href="../driverorders/driverorders.html">Orders by Driver</a>
+        </div>
+    </div>
+    <!--New Driver Form-->
+    <div class="content">
+        <form id="new-driver" method="POST" action="">
+            <fieldset>
+                <legend>New Driver</legend>
+                <label for="new-driver-first-name">driverFirstName</label>
+                <input id="new-driver-first-name" type="text" name="driver-first-name">
+                <label for="new-driver-last-name">driverLastName</label>
+                <input id="new-driver-last-name" type="text" name="driver-last-name">
+                <label for="new-driver-last-name">ordersAssigned</label>
+                <input id="new-orders-assigned" type="number" name="orders-assigned">
+                <input type="submit" value="Post">
+            </fieldset>
+        </form>
+    </div>
+    <!--Drivers Table-->
+    <div class="content">
+        <div id="drivers-table" style="display:table;width:100%;">
+            <div style="display:table-row;">
+                <div id="driver-id-header" style="display:table-cell;"><b>driverID</b></div>
+                <div id="driver-first-name-header" style="display:table-cell;"><b>driverFirstName</b></div>
+                <div id="driver-last-name-header" style="display:table-cell;"><b>driverLastName</b></div>
+                <div id="orders-assigned-header" style="display:table-cell;"><b>ordersAssigned</b></div>
+                <div id="driver-udpate" style="display:table-cell;"><b>&nbsp;</b></div>
+                <div id="driver-delete" style="display:table-cell;"><b>&nbsp;</b></div>
+            </div>
+        </div>
+    </div>
+    <!--Javascript-->
+    <script src="./drivers.js"></script>
+</body>
+
+</html>

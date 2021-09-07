@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body{
+    margin: 20px;
+    background-color: lightgray;
+}
+
+.content{
+   margin: 30px 0px 30px 0px;
+}
+
+div a{
+    margin: 0px 30px 0px 0px;
+}
+
+a, a:visited, a:hover, a:active{
+    color: blue;
+}

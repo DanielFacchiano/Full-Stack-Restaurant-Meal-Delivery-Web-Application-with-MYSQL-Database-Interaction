@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MealCity</title>
+    <link rel="stylesheet" href="../stylesheets/style.css" type="text/css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="content">
+        <h1>Shifts</h1>
+        <div>
+            <a href="../index.html">Home</a>
+            <a href="../drivers/drivers.html">Drivers</a>
+            <a href="./shifts.html">Shifts</a>
+            <a href="../drivershifts/drivershifts.html">Driver Shifts</a>
+            <a href="../orders/orders.html">Orders</a>
+            <a href="../customers/customers.html">Customers</a>
+            <a href="../restaurants/restaurants.html">Restaurants</a>
+            <a href="../driverorders/driverorders.html">Orders by Driver</a>
+        </div>
+    </div>
+    <!--New Shift Form-->
+    <div class="content">
+        <form id="new-shift" method="POST" action="">
+            <fieldset>
+                <legend>New Shift</legend>
+                <label for="new-shift-period">shiftPeriod</label>
+                <input id="new-shift-period" type="text" name="shift-period">
+                <label for="new-shift-start-time">shiftStartTime</label>
+                <input id="new-shift-start-time" type="time" name="shift-start-time">
+                <label for="new-shift-end-time">shiftEndTime</label>
+                <input id="new-shift-end-time" type="time" name="shift-end-time">
+                <input type="submit" value="Post">
+            </fieldset>
+        </form>
+    </div>
+    <!--Shifts Table-->
+    <div class="content">
+        <div id="shifts-table" style="display:table;width:100%;">
+            <div style="display:table-row;">
+                <div id="shift-id-header" style="display:table-cell;"><b>shiftID</b></div>
+                <div id="shift-period-header" style="display:table-cell;"><b>shiftPeriod</b></div>
+                <div id="shift-start-time-header" style="display:table-cell;"><b>shiftStartTime</b></div>
+                <div id="shift-end-time-header" style="display:table-cell;"><b>shiftEndTime</b></div>
+                <div id="shift-udpate" style="display:table-cell;"><b>&nbsp;</b></div>
+                <div id="shift-delete" style="display:table-cell;"><b>&nbsp;</b></div>
+            </div>
+        </div>
+    </div>
+    <!--Javascript-->
+    <script src="./shifts.js"></script>
+</body>
+
+</html>
